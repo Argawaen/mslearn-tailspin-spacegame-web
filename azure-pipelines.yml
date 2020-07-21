@@ -14,5 +14,6 @@ stages:
   - job:
     displayName: 'Build'
   - task: PublishPipelineArtifact@1
+    command: build
     displayName: 'Publish Artifact: Signaling WebService'
     condition: succeeded()
